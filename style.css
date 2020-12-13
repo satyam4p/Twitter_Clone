@@ -1,7 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
 }
 
 .wrapper {
@@ -18,7 +17,8 @@
     z-index: 100;
     padding-left: 40px;
     padding-top: 20px;
-    border-right: 0.5px solid rgb(16, 95, 212);
+    /* border-right: 0.5px solid rgb(16, 95, 212); */
+    border: none;
 }
 .content {
     height: 100%;
@@ -27,6 +27,8 @@
     padding: 0px;
     display: flex;
     overflow-x: hidden;
+    border: none;
+    flex-direction: row;
 }
 .content_body {
     width: 65%;
@@ -36,6 +38,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    border: none;
 }
 
 @media (max-width:720px){
@@ -50,34 +53,45 @@
     flex-basis: 1;
     height: 55px;
     background-color: white;
-    border-bottom: 0.5px solid rgb(16, 95, 212);
+    /* border-bottom: ; */
     top: 0;
     position: sticky;
     display: flex;
+    border: none;
+    padding: 0px;
+    margin: 0px;
     
 }
 
 .side_content {
-    border-left: 0.5px solid rgb(16, 95, 212);
+    /* border-left: 0.5px solid rgb(16, 95, 212); */
+    border: none;
     width: 35%;
     height: max-content;
     min-height: 720px;
     position: relative;
+    padding: 0px;
+    margin: 0px;
 }
 .twiter_icon {
-
     width: 20px;
     height: 40px;
 }
 .body_header_content {
-    margin-top: 20px;
+    
+    border: none;
 
 }
 
 .container {
     margin-left: 20px;
+    border: none;
 }
 .header_container {
-    margin-left: 20px;
+    
     padding: 0px;
+    border: none;
+}
+.card {
+    border: none;
 }

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,41 +6,80 @@
         <title>My Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" type="text/css" href="./custom.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        
-        
         <div class="wrapper">
-            <div class="drawer">
-                <i class="fab fa-twitter fa-2x twiter_icon"></i>
-            </div>
-            <div class="content">
-                <div class="content_body">  
-                    <div class="body_header">
-                        <div class="header_container">
-                            <h2 class="body_header_content">Username</h2>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="body">
-                        <div class="container">
-                            <h1>Welcome to twitter page</h1>
-                        </div>
-                       
-                    </div>           
-                  
+            <div class="card drawer">
+                <div class="drawer_header">
+                <i class="fab fa-twitter fa-2x twiiter_icon"></i>
                 </div>
-                <div class="side_content">
+                <div class="drawer_body">
+                    <div class="drawer_details">
+                        <li class="drawer_list">
+                            <div class="drawer_list_items">
+                                <a href="/"><i class="fas fa-hashtag fa-2x list_icons"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="list_item_text">
+                                    <h4 class="drawer_items_text">Explore</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drawer_list">
+                            <div class="drawer_list_items">
+                                <a href="/"><i class="fas fa-bell fa-2x list_icons" ></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="list_item_text">
+                                    <h4 class="drawer_items_text">Notifications</h4>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="drawer_list">
+                            <div class="drawer_list_items">
+                                <a href="/"><i class="far fa-envelope fa-2x list_icons"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="list_item_text">
+                                    <h4 class="drawer_items_text">Messages</h4>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </div>                    
+                </div>
+            </div>
+            <div class="card content">
+                <div class="card main_content">
+                    <div class="card main_content_header">
+                        <h3>Home</h3>
+                    </div>
+                    <div class="card main_content_body">
+                        <div>
                     
+                        </div>                   
+                    </div>
+
+                </div>
+                <div class="card side_content">
+                    <div class="card side_content_header">
+                        <div class="card search_card">
+                            <div class="search_icon_div">
+                                <i class="fas fa-search fa-2x"></i>
+                            </div>
+                            <div class="search_bar">
+                                <input type="search" class="search_input"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card side_content_body">
+                    </div>
                 </div>
 
             </div>
+            
         </div>
 
         <script src="./script.js" async defer></script>
