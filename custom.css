@@ -79,7 +79,10 @@
     background-color: white;
     padding-top: 10px;
     padding-left: 20px;
-    z-index: 200;    
+    z-index: 100;    
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 .main_content_body {
     height: 90%;
@@ -104,10 +107,10 @@
 
 .twiiter_icon {
     color: rgb(39, 133, 240);
-    z-index: 100;
+    z-index: 600;
 }
 .twiiter_icon.fade{
-    color: rgba(27, 28, 29, 0.849);
+    color: rgba(199, 208, 216, 0.849);
     z-index: 100;
     opacity: 10;
 }
@@ -186,6 +189,69 @@
         display: none;
     }
 }
+.drawer_small {
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 150;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    display: none;
+}
+
+.navButton{
+    width: 30%;
+    height: 7%;
+    background-color: antiquewhite;
+    position: absolute;
+    right: 0px;
+    border: none;
+
+}
+.navButton:active {
+    border: none;
+    outline: none;
+    
+}
+.navButton:focus {
+    border: none;
+    outline: none;
+}
+.sideNav_small{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    position: relative;
+}
+.side_drawer_button {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    
+}
+@media(max-width:360px){
+    .drawer_small{
+        display: block;
+        width: 40%;
+    }
+    .drawer{
+        display: none;
+    }
+    .side_drawer_button{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+    }
+}
+
+
+
 
 
 
